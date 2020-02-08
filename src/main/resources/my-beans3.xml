@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="myAuthor" class="pl.sda.zad3.Author">
+        <property name="name" value="Author name" />
+    </bean>
+
+    <bean id="myBook" class="pl.sda.zad3.Book">
+        <property name="author" ref="myAuthor" />
+        <property name="title" value="Harry Potter" />
+    </bean>
+
+    <bean id="myBook2" class="pl.sda.zad3.Book">
+        <property name="author" >
+            <bean id="myAuthor2" class="pl.sda.zad3.Author">
+                <property name="name" value="Author name2" />
+            </bean>
+        </property>
+        <property name="title" value="Harry Potter" />
+    </bean>
+</beans>

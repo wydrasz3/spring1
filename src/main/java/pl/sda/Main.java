@@ -19,6 +19,8 @@ public class Main {
         System.out.println(myMessage2.getText());
         System.out.println(myMessage3.getText());
 
+        System.out.println(myMessage2.equals(myMessageSingleton));
+        System.out.println(myMessage3.equals(myMessagePrototype));
 
     }
 }
