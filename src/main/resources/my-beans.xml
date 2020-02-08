@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="myMessage1" class="pl.sda.Message">
+        <property name="text" value="Hello spring!"/>
+    </bean>
+
+    <bean id="myMessage2" class="pl.sda.Message" scope="singleton">
+        <property name="text" value="Hello spring2!"/>
+    </bean>
+
+    <bean id="myMessage3" class="pl.sda.Message" scope="prototype">
+        <property name="text" value="Hello spring3!"/>
+    </bean>
+</beans>
