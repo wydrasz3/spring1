@@ -1,11 +1,17 @@
 package pl.sda.zad3;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+@Component
 public class Book {
 
     private String title;
+
+    @Autowired
     private Author author;
 
     public String getTitle() {

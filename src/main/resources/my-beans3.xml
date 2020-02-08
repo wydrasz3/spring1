@@ -25,5 +25,9 @@
         <property name="title" value="Harry Potter" />
     </bean>
 
+    <bean id="myText" class="java.lang.String">
+        <constructor-arg value="Ala ma kota." />
+    </bean>
+
     <context:annotation-config/>
 </beans>
